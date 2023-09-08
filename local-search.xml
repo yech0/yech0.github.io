@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>hexo+github博客搭建</title>
+    <link href="/2023/09/08/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%20/"/>
+    <url>/2023/09/08/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%20/</url>
+    
+    <content type="html"><![CDATA[<ul><li><p>贴一下参考链接</p><blockquote><p><a href="https://blog.csdn.net/weixin_45019350/article/details/121901433">https://blog.csdn.net/weixin_45019350/article/details/121901433</a></p><p><a href="https://zhuanlan.zhihu.com/p/60578464">https://zhuanlan.zhihu.com/p/60578464</a></p></blockquote></li><li><p>主题用的是<code>fluid</code></p><p>主题更换参考链接</p><blockquote><p><a href="https://blog.csdn.net/weixin_51545953/article/details/128499341">https://blog.csdn.net/weixin_51545953/article/details/128499341</a></p><p><a href="https://blog.csdn.net/weixin_49270402/article/details/117672195">https://blog.csdn.net/weixin_49270402/article/details/117672195</a> 里面的小彩蛋有图片网站(good)</p></blockquote></li><li><p>以管理员身份进入终端</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs shell">切换到`d盘myblog`下<br>d:<br>cd my blog<br><br>修改配置信息<br><br>hexo clean<br>hexo g<br>hexo s# 就可以生成静态的页面，预览效果<br>hexo d# 部署到github上 可能会出现错误 多试几次就好<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">出现这些提示信息就部署上去了</span><br>Delta compression using up to 8 threads<br>Compressing objects: 100% (53/53), done.<br>Writing objects: 100% (81/81), 5.03 MiB | 628.00 KiB/s, done.<br>Total 81 (delta 33), reused 0 (delta 0), pack-reused 0<br>remote: Resolving deltas: 100% (33/33), completed with 7 local objects.<br>To https://github.com/yech0/yech0.github.io<br>   6165f62..b080b14  HEAD -&gt; master<br>Branch &#x27;master&#x27; set up to track remote branch &#x27;master&#x27; from &#x27;https://github.com/yech0/yech0.github.io&#x27;.<br>[32mINFO [39m Deploy done: [35mgit[39m<br></code></pre></td></tr></table></figure></li><li><p>还有个问题就是背景图片加载太慢了 我已经尽量压缩了 但还是慢（就图片慢 其他的效果很快的</p><p><del>会不会换个源会好一点？下次试试</del></p><p>用Google打开会快一点 火狐比较慢，</p></li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2023/08/24/hello-world/"/>
     <url>/2023/08/24/hello-world/</url>
