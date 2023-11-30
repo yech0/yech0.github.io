@@ -1,0 +1,710 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/cat2.png">
+  <link rel="icon" href="/img/cat2.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="yech0">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="2023校赛总结0 前言 我是什么垃圾 出题给大佬做（瑟瑟发抖 大概就记录一下审WP过程中佬们的非预期和发现的题中的一些问题  1 signin 这题还有非预期我是没想到的 菜狗哭泣（当时出的时候也没多想 就按磐石那个出的来着 12345678910111213int __cdecl main(int argc, const char **argv, const char **envp)&amp;#123">
+<meta property="og:type" content="article">
+<meta property="og:title" content="YEch0&#39;s Blog">
+<meta property="og:url" content="https://yech0.github.io/2023/11/30/2023%E6%A0%A1%E8%B5%9B%E6%80%BB%E7%BB%93/index.html">
+<meta property="og:site_name" content="YEch0&#39;s Blog">
+<meta property="og:description" content="2023校赛总结0 前言 我是什么垃圾 出题给大佬做（瑟瑟发抖 大概就记录一下审WP过程中佬们的非预期和发现的题中的一些问题  1 signin 这题还有非预期我是没想到的 菜狗哭泣（当时出的时候也没多想 就按磐石那个出的来着 12345678910111213int __cdecl main(int argc, const char **argv, const char **envp)&amp;#123">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-11-30T14:15:45.894Z">
+<meta property="article:modified_time" content="2023-11-30T14:13:53.946Z">
+<meta property="article:author" content="yech0">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>YEch0&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"yech0.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>YEch0</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/bj3.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.5)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-11-30 22:15" pubdate>
+          2023年11月30日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          40 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header"></h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="2023校赛总结"><a href="#2023校赛总结" class="headerlink" title="2023校赛总结"></a>2023校赛总结</h1><h3 id="0-前言"><a href="#0-前言" class="headerlink" title="0 前言"></a>0 前言</h3><ul>
+<li>我是什么垃圾 出题给大佬做（瑟瑟发抖</li>
+<li>大概就记录一下审WP过程中佬们的非预期和发现的题中的一些问题</li>
+</ul>
+<h3 id="1-signin"><a href="#1-signin" class="headerlink" title="1 signin"></a>1 signin</h3><ul>
+<li><p>这题还有非预期我是没想到的 菜狗哭泣（当时出的时候也没多想 就按磐石那个出的来着</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">int</span> __cdecl <span class="hljs-title function_">main</span><span class="hljs-params">(<span class="hljs-type">int</span> argc, <span class="hljs-type">const</span> <span class="hljs-type">char</span> **argv, <span class="hljs-type">const</span> <span class="hljs-type">char</span> **envp)</span><br>&#123;<br>  __int64 v4[<span class="hljs-number">2</span>]; <span class="hljs-comment">// [rsp+0h] [rbp-10h] BYREF</span><br><br>  v4[<span class="hljs-number">1</span>] = __readfsqword(<span class="hljs-number">0x28</span>u);<br>  put(argc, argv, envp);<br>  __isoc99_scanf(<span class="hljs-string">&quot;%ld&quot;</span>, v4);<br>  <span class="hljs-keyword">if</span> ( v4[<span class="hljs-number">0</span>] &gt; <span class="hljs-number">3</span> )<br>    <span class="hljs-built_in">exit</span>(<span class="hljs-number">-1</span>);<br>  <span class="hljs-keyword">if</span> ( LODWORD(v4[<span class="hljs-number">0</span>]) == B )<br>    b4ckdo0r();<br>  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>只要符号位为1 低32位为0x42就行 至于高32位的数值位为多少都行</p>
+</li>
+<li><p>然后关于如何发送的问题</p>
+<blockquote>
+<p>但是这里读入用的是scanf，所以必须以字符串或者bytes的形式输入数字(X1ngCHEN师傅)</p>
+</blockquote>
+<p>p64是不行的 但我查了查p64就是将整数转换成字节啊？（不过我好像用p64只会是地址</p>
+</li>
+<li><p>patchelf还可以这样写(X1ngCHEN师傅)</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">patchelf --set-interpreter /home/akyuu/glibc-all-in-one/libs/2.23-0ubuntu3_amd64/ld-2.23.so --replace-needed libc.so.6 /home/akyuu/glibc-all-in-one/libs/2.23-0ubuntu3_amd64/libc.so.6 pwn<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="2-EZest"><a href="#2-EZest" class="headerlink" title="2 EZest"></a>2 EZest</h3><ul>
+<li><p>有的师傅只写了一个SigFrame<br>用<code>pop_rbp_ret</code>写&#x2F;bin&#x2F;sh</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"> <span class="hljs-string">b&#x27;a&#x27;</span>*<span class="hljs-number">0x10</span> + p64(pop_rbp_ret) + p64(bss - <span class="hljs-number">0x10</span>) + p64(<span class="hljs-number">0x40110e</span>)<br>    <br>.text:000000000040110E <span class="hljs-number">48</span> C7 C0 <span class="hljs-number">00</span> <span class="hljs-number">00</span> <span class="hljs-number">00</span> <span class="hljs-number">00</span>          mov     rax, <span class="hljs-number">0</span><br>.text:0000000000401115 <span class="hljs-number">48</span> C7 C7 <span class="hljs-number">00</span> <span class="hljs-number">00</span> <span class="hljs-number">00</span> <span class="hljs-number">00</span>          mov     rdi, <span class="hljs-number">0</span>                          ; fd<br>.text:000000000040111C <span class="hljs-number">48</span> 8D <span class="hljs-number">75</span> F0                   lea     rsi, [rbp+buf]                  ; buf<br>.text:0000000000401120 <span class="hljs-number">48</span> C7 C2 <span class="hljs-number">00</span> 02 <span class="hljs-number">00</span> <span class="hljs-number">00</span>          mov     rdx, 200h                       ; count<br>.text:0000000000401127 0F 05                         syscall                                 ; LINUX - sys_read<br>.text:0000000000401129 C3                            retn<br>.text:0000000000401129<br>.text:0000000000401129                               main endp ; sp-analysis failed<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>不过本来也是板子题</p>
+</li>
+</ul>
+<h3 id="3-magicode"><a href="#3-magicode" class="headerlink" title="3 magicode"></a>3 magicode</h3><ul>
+<li><p>这题可能出的还可以？？（小心翼翼 还好当时没有把这么丑的代码改掉😏 不然师傅们就觉得贼简单了</p>
+</li>
+<li><p>但这题之前说过 保护那里应该可以怎么弄不显示rwx段（FSCTF那</p>
+</li>
+<li><p>Ephemeral1y师傅真的强 手打shellcode来着<br>pANz0e师傅add(-10)也是可以的</p>
+</li>
+<li><p>还有Whhxy4师傅提到了绕过canary的问题</p>
+<blockquote>
+<p>alloca在汇编⾥⾯的效果是add rsp，rdx</p>
+<p>也就是1是分配⼀个栈根据rbp的位置往下减，输⼊0就是在rbp-0x10的位置开始以此类推 ，这题有</p>
+<p>canary所以输⼊0正好跳过canary </p>
+<hr>
+<p>emmm 我仔细看了一下 首先是sub rsp, rdx 然后是根据rsp的位置往下减，确实和canary无关 rbp的位置是固定的</p>
+</blockquote>
+<p>X1ngCHEN师傅说有爆破？ 啊出题和做题还是有些不同的 完全没考虑到<br>试了试X1ingCHEN师傅的exp，其实也并不用爆破 ，好像最后<code>\x10</code>完全没用到 每一次都能getshell的 </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python">payload = <span class="hljs-string">b&#x27;a&#x27;</span>*(<span class="hljs-number">0x70</span>) + shellcode.ljust(<span class="hljs-number">0x50</span>, <span class="hljs-string">b&#x27;\x00&#x27;</span>)+<span class="hljs-string">b&#x27;\x10&#x27;</span><br></code></pre></td></tr></table></figure>
+
+<p>嗯嗯 确实 magic函数的实现为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs asm">.text:0000000000001568 48 8B 45 E0                   mov     rax, [rbp+var_20]		# 这个var_20我gdb看好像就是固定为0x20 然后这个位置存放的就是shellcode的起始位置<br>.text:000000000000156C FF D0                         call    rax<br></code></pre></td></tr></table></figure>
+</li>
+<li><p>好好好 alloca函数是为了对齐并且多0x10(可能是为了安全) 就是如果为alloca(0x60) 实际分配的是0x70 如果是alloca(0x64) 分配的也是0x70</p>
+</li>
+<li><p>gdb应该是能看到的会多分配0x10 alloca在汇编上的效果是<code>sub    rsp, rdx</code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">这是执行完sub rsp, rdx以后 size输入的是0x20</span><br>0x555555555496 &lt;main+311&gt;    sub    rsp, rdx<br> ► 0x555555555499 &lt;main+314&gt;    mov    rdx, rax<br>   0x55555555549c &lt;main+317&gt;    and    edx, 0xfff<br>   0x5555555554a2 &lt;main+323&gt;    test   rdx, rdx<br>   0x5555555554a5 &lt;main+326&gt;    je     main+344                &lt;main+344&gt;<br> <br>   0x5555555554a7 &lt;main+328&gt;    and    eax, 0xfff<br>   0x5555555554ac &lt;main+333&gt;    sub    rax, 8<br>──────────────────────────────────────────────────────────────────────────────────────────────────────────────[ STACK ]───────────────────────────────────────────────────────────────────────────────────────────────────────────────<br>00:0000│ rsp 0x7fffffffdd10 ◂— 0xa3233 /* &#x27;32\n&#x27; */		# alloca(0x20)以后rsp的位置<br>01:0008│     0x7fffffffdd18 ◂— 0x0<br>02:0010│     0x7fffffffdd20 —▸ 0x7fffffffdf18 —▸ 0x7fffffffe278 ◂— &#x27;/home/yech0/sskd/hectf2023/2magicode/magicode&#x27;zhe<br>03:0018│     0x7fffffffdd28 ◂— 0xe4c8453177346a00<br>04:0020│     0x7fffffffdd30 —▸ 0x7fffffffde00 ◂— 0x1<br>05:0028│     0x7fffffffdd38 —▸ 0x55555555543d (main+222) ◂— mov dword ptr [rbp - 0x2c], eax<br>06:0030│     0x7fffffffdd40 —▸ 0x555555558020 (stdout@GLIBC_2.2.5) —▸ 0x7ffff7e1a780 (_IO_2_1_stdout_) ◂— 0xfbad2887	# rsp原先的位置<br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"></span><br><span class="hljs-meta prompt_"># </span><span class="language-bash">我这里gdb是如何实现多0x10的:(size输入0x20以后</span><br>   0x555555555445 &lt;main+230&gt;    lea    rdx, [rax + 8]	rdx:0x28<br>   0x555555555449 &lt;main+234&gt;    mov    eax, 0x10	    rax:0x10<br>   0x55555555544e &lt;main+239&gt;    sub    rax, 1		    rax:0xf<br>   0x555555555452 &lt;main+243&gt;    add    rax, rdx			rax:0x37<br>   0x555555555455 &lt;main+246&gt;    mov    esi, 0x10<br>   0x55555555545a &lt;main+251&gt;    mov    edx, 0<br>   0x55555555545f &lt;main+256&gt;    div    rsi				rax:0x3		rd:0x7<br>   0x555555555462 &lt;main+259&gt;    imul   rax, rax, 0x10	 rax:0x30<br></code></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="4-fmt"><a href="#4-fmt" class="headerlink" title="4 fmt"></a>4 fmt</h3><ul>
+<li><p>好好好 没有师傅用预期方法 菜狗爆哭 师傅们都太强了 </p>
+</li>
+<li><p>我都不道会有stack_chk_fail的利用 那其实能利用多次的话就完全不用给后门了 师傅们好像也没用（555555 有一个（蔚蓝师傅用了fini_array pANz0e师傅用了fini_array没有泄露libc 又改stack_chk_fail泄露然后利用后门</p>
+</li>
+<li><blockquote>
+<p>读了题目都知道是格式化字符串漏洞了，但是正常情况下只能使用一次，这显然是无法让我们拿到shell的。</p>
+<p>刚开始往格式化字符串泄露canary然后构造ROP的办法来想的，但是意识到第一步获得了canary又能干什么呢？啥都干不了，就exit了。所以我们不能这么平庸地看问题。</p>
+<p>考虑到绕过Canary，不如与其正面硬刚，直接让Canary失效。</p>
+<p>众所周知，如果程序检测到Canary被更改了，那么就会在函数结束的时候调用<strong>stk_chk_fail</strong>这个函数，然后就退出了。但是我们正是可以利用这一点，用格式化字符串更改stk_chk_fail的got表地址为main函数地址，那么就可以构造较长的payload来修改Canary从而可以无限次调用main函数，也是可以通过较短的payload不修改Canary来达到不接着调用</p>
+<p>函数直接ret的效果。</p>
+<p>既然可以控制main函数的执行了，那么我们也就可以控制格式化字符串漏洞的利用了。</p>
+<p>于是我们这样利用漏洞：</p>
+<p>1.第一次格式化字符串漏洞：修改__stk_chk_fail函数的got表地址为main函数地址。</p>
+<p>2.第二次格式化字符串漏洞：获取栈上面__libc_start_main+128的地址。</p>
+<p>3.第三次格式化字符串漏洞：构建并且输入ROP，但是这里payload的长度肯定会覆盖Canary，因此我们这里一定会进入下一层main函数，但是在下一层main函数我们随便传一个短短的字符串就行了，就可以不修改Canary从而达到退出执行上一层main函数输入的ROP的效果。</p>
+<p>这里输入用的是scanf，遇到0d会截断，亲测system似乎打不通（我只试了本地，远程不知道），反正都有libc基址了，啥gedgets就都有了，而且ROP空间充足那么我们倒不如直接调用成功率更大的execve（X1ngCHEN师傅</p>
+</blockquote>
+<p>然后这里还有个问题就是高版本rop的话没有pop_rdi_ret的这种gadget 于是师傅们用了libc里的<br>上面还说到system打不通 有的师傅用了execve 有的用的onegaget</p>
+</li>
+<li><p>magicode和这题enllus1on师傅都拿了一血 magicode不用多说 应该是做过fcalc那个题 这个题写的exp看不懂（最强双非22级是吧 瑟瑟发抖</p>
+</li>
+<li><p>sublime text ctrl shif L多行编辑</p>
+</li>
+</ul>
+<h3 id="5-风水小狮"><a href="#5-风水小狮" class="headerlink" title="5 风水小狮"></a>5 风水小狮</h3><ul>
+<li>emmmm 这个应该没啥注意的 都是预期解</li>
+</ul>
+<h3 id="6-风水中狮"><a href="#6-风水中狮" class="headerlink" title="6 风水中狮"></a>6 风水中狮</h3><ul>
+<li>又是enllus1on师傅 唯一解 真的强 %50$p和 %51%p都是flag的地址</li>
+<li>沃趣 好像给的解释错了 给师傅们磕一个</li>
+</ul>
+<h3 id="7-风水大狮"><a href="#7-风水大狮" class="headerlink" title="7 风水大狮"></a>7 风水大狮</h3><ul>
+<li>好家伙 田总说加载沙箱的代码忘写了 非预期了 没有绕沙箱也能做的 好家伙 除了Ephemeral1y师傅用了看不懂的链子<br>怪我怪我 没审好题</li>
+<li>如果有沙箱的话 就得绕 但还没看懂</li>
+</ul>
+<h3 id="8-easyweb"><a href="#8-easyweb" class="headerlink" title="8 easyweb"></a>8 easyweb</h3><ul>
+<li>就X1ngCHEN师傅的唯一解呢 预期解 看看就欧克</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div></div>
+      <div>https://yech0.github.io/2023/11/30/2023校赛总结/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>yech0</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年11月30日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/09/08/hexo+github%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="hexo+github博客搭建">
+                        <span class="hidden-mobile">hexo+github博客搭建</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxingxing.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js"></script>
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
