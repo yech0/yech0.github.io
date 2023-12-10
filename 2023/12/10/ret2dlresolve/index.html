@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="c:\Users\%E5%BC%A0%E6%A2%93%E7%83%A8\AppData\Roaming\Typora\typora-user-images\image-20231207203330003.png">
 <meta property="article:published_time" content="2023-12-10T11:45:14.836Z">
-<meta property="article:modified_time" content="2023-12-10T11:50:02.750Z">
+<meta property="article:modified_time" content="2023-12-10T11:58:24.121Z">
 <meta property="article:author" content="yech0">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="c:\Users\%E5%BC%A0%E6%A2%93%E7%83%A8\AppData\Roaming\Typora\typora-user-images\image-20231207203330003.png">
@@ -316,7 +316,8 @@
 <li><p>上面说到<code>_dl_runtime_resolve(link_map,reloc_arg)</code>的link_map包含了.dynamic的指针，通过link_map可以访问到.dynamic节；reloc_arg是当前要调用的导入函数在<code>.rel.plt</code>中的偏移（不过64位的话就直接是index下标）</p>
 </li>
 <li><blockquote>
-<h2 id="dl-runtime-resolve会"><a href="#dl-runtime-resolve会" class="headerlink" title="_dl_runtime_resolve会"></a><strong>_dl_runtime_resolve会</strong></h2><ol>
+<p><strong>dl_runtime_resolve会</strong></p>
+<ol>
 <li>用<code>link_map</code>访问<code>.dynamic</code>，取出<code>.dynstr</code>, <code>.dynsym</code>, <code>.rel.plt</code>的指针</li>
 <li><code>.rel.plt + 第二个参数</code>求出当前函数的重定位表项<code>Elf32_Rel</code>的指针，记作<code>rel</code></li>
 <li><code>rel-&gt;r_info &gt;&gt; 8</code>作为<code>.dynsym</code>的下标，求出当前函数的符号表项<code>Elf32_Sym</code>的指针，记作<code>sym</code></li>
@@ -527,7 +528,7 @@ pwndbg&gt; tele 0x404230 40
 </ul>
 </li>
 </ul>
-<h5 id="3-3-FULLRELRO"><a href="#3-3-FULLRELRO" class="headerlink" title="3.3 FULLRELRO"></a>3.3 FULLRELRO</h5><ul>
+<h4 id="3-3-FULLRELRO"><a href="#3-3-FULLRELRO" class="headerlink" title="3.3 FULLRELRO"></a>3.3 FULLRELRO</h4><ul>
 <li>wiki上还有FULLRELRO的呢 先鸽了</li>
 </ul>
 
