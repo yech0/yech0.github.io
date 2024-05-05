@@ -24,7 +24,7 @@
 <meta property="og:description" content="week1pwn0 签到 直接nc  1 ezshellcode 明文shellcode 12345678910from pwn import *# io &#x3D; process(&quot;.&#x2F;vuln&quot;)io &#x3D; remote(&quot;47.100.139.115&quot;,31134)io.sendlineafter(&quot;length of your shellcode:">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-03-23T08:00:51.753Z">
-<meta property="article:modified_time" content="2024-05-05T08:05:31.387Z">
+<meta property="article:modified_time" content="2024-05-05T08:16:30.758Z">
 <meta property="article:author" content="yech0">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -547,6 +547,9 @@ x/30gx &amp;main_arena不行
 </ul>
 <h2 id="week4"><a href="#week4" class="headerlink" title="week4"></a>week4</h2><h3 id="pwn-3"><a href="#pwn-3" class="headerlink" title="pwn"></a>pwn</h3><h4 id="EldenRingFinal"><a href="#EldenRingFinal" class="headerlink" title="EldenRingFinal"></a>EldenRingFinal</h4><ul>
 <li><p>啊懂了 因为是没有show函数的 所以需要利用_IO_2_1_stdout_或_IO_2_1_stderr_泄露libc 据说现在也比较常见了 然后就是一般来说是需要爆破的</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_41202237/article/details/113845320">https://blog.csdn.net/qq_41202237/article/details/113845320</a></p>
+</blockquote>
 </li>
 <li><pre><code class="c">// 2.23
 struct _IO_FILE_plus
@@ -603,13 +606,13 @@ struct _IO_FILE &#123;
 
 
 
-![](../img\QQ截图20240504192519.png)
+![](\img\QQ截图20240504192519.png)
 </code></pre>
 </li>
 <li></li>
 <li><blockquote>
 <p>从fastbin中重新malloc时需要size一样，而不是分割</p>
-<p>unsortedbin中重新分配</p>
+<p>unsortedbin中重新分配则会分割</p>
 </blockquote>
 </li>
 <li><pre><code class="python">pwndbg&gt; heap
